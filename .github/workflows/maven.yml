@@ -27,6 +27,12 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+        
+    - name: Set env BOT_USERNAME
+        run: echo "BOT_USERNAME=${{ secrets.BOT_USERNAME }}" >> $GITHUB_ENV
+    - name: Set env BOT_TOKEN
+        run: echo "BOT_TOKEN=${{ secrets.BOT_TOKEN }}" >> $GITHUB_ENV    
+    
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
