@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  jrtb:
+    build:
+      context: .
+    environment:
+      - BOT_NAME
+      - BOT_TOKEN
+    restart: always
