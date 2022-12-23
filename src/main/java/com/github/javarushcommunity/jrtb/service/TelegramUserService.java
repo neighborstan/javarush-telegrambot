@@ -19,14 +19,14 @@ public interface TelegramUserService {
     void save(TelegramUser telegramUser);
 
     /**
-     * Retrieve all active {@link TelegramUser}.
+     * Find all active {@link TelegramUser}.
      *
      * @return the collection of the active {@link TelegramUser} objects.
      */
     List<TelegramUser> findAllActiveUsers();
 
     /**
-     * Retrieve all inactive {@link TelegramUser}
+     * Find all inactive {@link TelegramUser}
      *
      * @return the collection of the inactive {@link TelegramUser} objects.
      */
